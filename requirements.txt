@@ -1,0 +1,13 @@
+crewai>=0.28.0
+crewai-tools>=0.2.0
+langchain>=0.1.0
+langchain-openai>=0.0.5
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+PyQt6>=6.6.0
+midiutil>=1.2.1
+pygame>=2.5.0
+numpy>=1.24.0
+scipy>=1.10.0
+pydub>=0.25.1
+pyinstaller>=6.0.0
