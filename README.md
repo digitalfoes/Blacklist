@@ -1,31 +1,74 @@
-# Blacklist Management Tool with CrewAI
+# 🛡️ Blacklist Management Tool v1.0
 
-A blacklist management system powered by CrewAI agents that help users manage their personal blacklist of enemies, with integrated Python code quality tools.
+A powerful blacklist management system with a sleek terminal-style GUI, featuring custom music playback and modern Python architecture.
 
-## Features
+## ✨ Features
 
-- **AI-Powered Management**: Uses CrewAI agents to intelligently manage blacklist entries
-- **Multi-Agent System**: Specialized agents for different aspects of blacklist management
-- **Flexible Operations**: Add, remove, search, and analyze blacklist entries
-- **Python Pro Agent**: Code review, optimization, refactoring, and modernization using Python 3.12+ best practices
+### 🎨 Terminal-Style GUI
+- **Custom RED theme** - Dark terminal aesthetic with red text
+- **ASCII art logo** - "BLACKLIST" in stylized text
+- **Frameless window** - Custom title bar with draggable interface
+- **Pocket-sized** - Compact 500x400 window
+- **Music player** - Background music with toggle control
 
-## Setup
+### 🛠️ Core Functionality
+- **Add/Remove entries** - Manage blacklist with ease
+- **Search** - Find entries quickly
+- **Update** - Modify existing entries
+- **List all** - View all entries with sorting
 
-1. Install dependencies:
+### 🎵 Audio Features
+- **Background music** - Custom theme song plays on loop
+- **Music toggle** - Small checkbox to enable/disable music
+- **Git LFS support** - Large audio files managed efficiently
+
+### 🤖 AI-Powered (Optional)
+- **CrewAI agents** - Intelligent blacklist management
+- **Python Pro Agent** - Code review and optimization tools
+- **Multi-agent system** - Specialized agents for different tasks
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.13+
+- Git LFS (for audio files)
+
+### Installation
+
+1. **Clone the repository:**
+```bash
+git clone <your-repo-url>
+cd new_project
+```
+
+2. **Install Git LFS (if not already installed):**
+```bash
+git lfs install
+git lfs pull  # Download audio files
+```
+
+3. **Create virtual environment:**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+# or
+venv\Scripts\activate  # On Windows
+```
+
+4. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Configure environment:
+5. **Run the GUI application:**
 ```bash
-cp .env.example .env
-# Edit .env and add your API keys
+python gui_terminal.py
 ```
 
-3. Run the tool:
-```bash
-python main.py
-```
+### Alternative Versions
+- **GUI (Table-based):** `python gui.py`
+- **CLI (Simple):** `python main_simple.py`
+- **CLI (with AI):** `python main.py` (requires API key)
 
 ## Project Structure
 
