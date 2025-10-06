@@ -2,6 +2,8 @@
 
 A sleek terminal-style GUI application for managing your personal blacklist with style.
 
+![Blacklist Screenshot](blacklist_screenshot.png)
+
 ## ✨ Features
 
 - **Terminal-Style GUI** - Dark theme with RED text and ASCII art logo
