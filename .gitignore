@@ -6,15 +6,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-build/
+data/blacklist.json
+.DS_Store
+
+# Large audio files (download separately)
+*.mp3
+*.wav
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
 lib/
-lib64/
 parts/
 sdist/
 var/
