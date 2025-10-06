@@ -547,34 +547,6 @@ class TerminalGUI(QMainWindow):
         input_layout.addWidget(self.prompt_label)
         input_layout.addWidget(self.input_field)
         
-        # Music toggle button
-        if self.ENABLE_MUSIC:
-            self.music_enabled = True
-            music_label = QLabel("Music:")
-            music_label.setFont(QFont("Courier", 8))
-            music_label.setStyleSheet("color: #ff0000; margin-left: 10px;")
-            
-            self.music_toggle_btn = QPushButton("")  # Empty when music is playing
-            self.music_toggle_btn.setFixedSize(12, 12)
-            self.music_toggle_btn.setFont(QFont("Courier", 7, QFont.Weight.Bold))
-            self.music_toggle_btn.setStyleSheet("""
-                QPushButton {
-                    background-color: #000000;
-                    color: #ff0000;
-                    border: 1px solid #ff0000;
-                    font-weight: bold;
-                }
-                QPushButton:hover {
-                    background-color: #ff0000;
-                    color: #000000;
-                    border: 1px solid #ff0000;
-                }
-            """)
-            self.music_toggle_btn.clicked.connect(self.toggle_music)
-            
-            input_layout.addWidget(music_label)
-            input_layout.addWidget(self.music_toggle_btn)
-        
         layout.addWidget(input_frame)
         
         # Focus on input
@@ -645,45 +617,6 @@ Respect
         """Handle mouse release."""
         if event.button() == Qt.MouseButton.LeftButton:
             self.dragging = False
-    
-    def toggle_music(self):
-        """Toggle music on/off."""
-        if self.music_enabled:
-            # Turn off music - show X
-            pygame.mixer.music.pause()
-            self.music_enabled = False
-            self.music_toggle_btn.setText("X")
-            self.music_toggle_btn.setStyleSheet("""
-                QPushButton {
-                    background-color: #000000;
-                    color: #ff0000;
-                    border: 1px solid #ff0000;
-                    font-weight: bold;
-                }
-                QPushButton:hover {
-                    background-color: #ff0000;
-                    color: #000000;
-                    border: 1px solid #ff0000;
-                }
-            """)
-        else:
-            # Turn on music - empty box
-            pygame.mixer.music.unpause()
-            self.music_enabled = True
-            self.music_toggle_btn.setText("")
-            self.music_toggle_btn.setStyleSheet("""
-                QPushButton {
-                    background-color: #000000;
-                    color: #ff0000;
-                    border: 1px solid #ff0000;
-                    font-weight: bold;
-                }
-                QPushButton:hover {
-                    background-color: #ff0000;
-                    color: #000000;
-                    border: 1px solid #ff0000;
-                }
-            """)
     
     def closeEvent(self, event):
         """Handle window close event - stop music."""
