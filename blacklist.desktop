@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Blacklist
-Comment=Blacklist Management Tool
-Exec=blacklist
-Icon=blacklist
-Categories=Utility;
-Terminal=false
